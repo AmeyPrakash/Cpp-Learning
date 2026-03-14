@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+#include <climits>
 
 int main(){
     int size = 6;
