@@ -28,4 +28,20 @@ input array = x square new creation will be counted therefore O(n)
 O(1),O(log n),O(n),O(n log n)
 O(n^2),O(n^3),O(2^n),O(n!).
 
+
+
+int factorial(int n) {
+    if(n==0){
+      return 1;
+    }
+    return n*factorial(n-1);
+}
+
+F(n)=k+f(n-1)
+f(n-1)=k+f(n-2)
+.
+.
+.
+.....
+f(1)=1+f(0)
 */
