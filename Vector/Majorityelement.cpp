@@ -67,6 +67,7 @@ int majorityelement(vector<int> &nums){
         if (freq==0)
         {
             ans = nums[i];
+            freq++;
         }
         else if (ans == nums[i]){
             freq++;
@@ -75,8 +76,15 @@ int majorityelement(vector<int> &nums){
             freq--;
         }
     }
-    return ans;
+    int count = 0;
+    for (int i : nums){
+        if (i==ans){
+            count++;
 
+        }
+
+    }
+    return (count > n / 2) ? ans : -1;
 
 }
 
