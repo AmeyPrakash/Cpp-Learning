@@ -3,6 +3,10 @@ using namespace std;
 #include<vector>
 #include<list>
 #include<deque>
+#include<stack>
+#include<queue>
+#include<map>
+
 
 int main(){
 
@@ -58,6 +62,94 @@ int main(){
     // {
     //     cout<<i.first<<" "<<i.second<<endl;
     // }
+    
+
+
+    //STACK   
+
+    //LIFO  (LAST IN FIRst out)
+    //elements will be added at top and removed from top
+
+
+
+
+    // stack<int> s1;
+    // s1.push(1);
+    // s1.push(2);
+    // s1.push(3);
+
+    // stack<int> s2;
+    // s2.swap(s1);
+    // cout<<s1.size()<<endl;
+    // cout<<s2.size()<<endl;
+
+
+    
+   // cout<<s1.top()<<endl;
+    // while (!s1.empty())
+    // {
+    //     cout<<s1.top()<<endl;
+    //     s1.pop();
+        
+    // }
+
+
+
+    /*QUEUE
+
+    FIRST IN FIRST OUT
+    
+
+    */
+    // queue<int> q;
+    // q.push(1);
+    // q.push(2);
+    // q.push(3);
+    // while (!q.empty())
+    // {
+    //     cout<<q.front()<<endl;
+    //     q.pop();
+    // }
+    
+/*PRIORITY QUEUE
+internally its a tree structure
+By default higher will have highest priority
+
+its a tree in which the minimum element is at the top
+*/
+
+    // priority_queue<int> q;
+    // q.push(1);
+    // q.push(2);
+    // q.push(3);
+    // while (!q.empty())
+    // {
+    //     cout<<q.top()<<endl;
+    //     q.pop();
+    // }
+    
+    // priority_queue<int,vector<int>,greater<int>> q;
+
+    // q.push(1);   //O(log n)
+    // q.push(2);
+    // q.push(3);
+    // while (!q.empty())
+    // {
+    //     cout<<q.top()<<endl;
+    //     q.pop();  //O(log n)
+    // }    
+    /*
+
+
+
+    
+    MAPS
+    m[key]=value
+    key will be unique while value can be duplicate
+
+
+
+    */
     
 
     
