@@ -6,7 +6,7 @@ using namespace std;
 #include<stack>
 #include<queue>
 #include<map>
-
+#include<unordered_map>
 
 int main(){
 
@@ -142,16 +142,47 @@ its a tree in which the minimum element is at the top
 
 
 
-    
-    MAPS
+
+    MAPS O(log n)
     m[key]=value
     key will be unique while value can be duplicate
-
-
+    
 
     */
+//    map<string, int> m;
+//    m["tv"]=100;
+//    m["laptop"]=100;
+//    m["headphones"]=50;
+//    m["tablet"]=120;    //sorts the data in ascending order in alphabatical order
+//    m["watch"]=50;
+//    m.emplace("camera",25);
+//    m.erase("tv");
+
+//    if(m.find("tablet") != m.end()){
+//     cout<<"found\n";
+//    }
+//    else{
+//     cout<<"not found\n";
+//    }
+
+//    for (auto i:m)
+//    {
+//     cout<<i.first<<" "<<i.second<<endl;
+
+//    }
+//    cout<<"count = "<<m["laptop"]<<endl;
+   
+//     //MULTI MAP
+//     multimap<string, int> m;
+//     m.emplace("camera",25);
+//     m.emplace("camera",25);
+//     m.emplace("camera",25);
+//     m.emplace("camera",25);
+//     m.erase(m.find("camera")); 
+
+//UNORDERED MAP
+    // unordered_map<string, int> m;
     
 
-    
     return 0;
 }
