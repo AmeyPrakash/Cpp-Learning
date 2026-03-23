@@ -9,7 +9,11 @@ using namespace std;
 #include<unordered_map>
 #include<set>
 #include<unordered_set>
+#include<algorithm>
 
+
+
+bool comparator(pair<int,int> p1,pair<int,int> p2);
 int main(){
 
     //VECTOR ITERATORS
@@ -219,6 +223,69 @@ its a tree in which the minimum element is at the top
     // s.insert(3);
     // s.insert(1);
     // s.insert(5);
+
+    //ALGORITHMS
+    
+    
+    // int arr [5]={1,8,6,4,5};
+    // sort(arr, arr + 5);
+    // for(int val: arr){
+    //     cout<<val<<" ";
+    // }
+    //DESCENDING 
+    //sort(arr,arr+n,greater<int>());
+
+    //Pair 1st value sort
+    // vector<pair<int,int>>vec={{3,1},{2,1},{7,6}};
+    // sort(vec.begin(),vec.end());
+    // for(auto val: vec){
+    //     cout<<val.first<<" "<<val.second<<endl;
+    // }
+    //second value sort
+    /*
+    custom coparator
+    bool return*/
+    
+//     vector<pair<int,int>>vec={{3,1},{2,1},{7,6}};
+//     sort(vec.begin(),vec.end(), comparator);
+//     for(auto val: vec){
+//         cout<<val.first<<" "<<val.second<<endl;
+//     }
+
+
+
+//     return 0;
+// }
+// bool comparator(pair<int,int> p1,pair<int,int> p2){
+//     if(p1.second<p2.second) return true;
+//     if(p1.second>p2.second) return false;
+//     if(p1.first<p2.first) return true;
+//     else return false;
+// }
+        
+    // vector<int> vec ={1,2,3,4,5};
+    // reverse(vec.begin()+1,vec.begin()+3);
+    // for(auto val: vec){
+    //     cout<<val<<endl;
+    // }
+    
+    // string s ="abc";
+    // prev_permutation(s.begin(),s.end());
+    // cout<<s<<endl;
+
+    // cout<<max(4,5)<<min(3,8);
+    //swap();
+
+    // vector<int> vec ={1,2,3,4,5};
+    // cout<<*(max_element(vec.begin(),vec.end()))<<endl;
+    // cout<<*(min_element(vec.begin(),vec.end()))<<endl;
+    // cout<<binary_search(vec.begin(),vec.end(),4);
+
+    // for(auto val: vec){
+    //     cout<<val<<endl;
+    // }
+
+
 
     return 0;
 }
