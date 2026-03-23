@@ -7,6 +7,8 @@ using namespace std;
 #include<queue>
 #include<map>
 #include<unordered_map>
+#include<set>
+#include<unordered_set>
 
 int main(){
 
@@ -183,6 +185,40 @@ its a tree in which the minimum element is at the top
 //UNORDERED MAP
     // unordered_map<string, int> m;
     
+
+    /*
+    SET
+    
+    data stored is unique and duplicate values are ignored
+    */
+    // set<int>s;
+    // s.insert(1);
+    // s.insert(2);
+    // s.insert(3);
+    // s.insert(4);
+    // s.insert(5);    //O(log n)
+
+    // //lower bound function value passed 4 it will return 4 if found other wise it will return  just greater value
+    // cout<<*(s.lower_bound(4))<<endl;
+
+    // //Upper bound 
+    // // value is greater than the given key will never be equal to the key given.
+    // cout<<*(s.upper_bound(4));
+
+    // //MULTI SET 
+    // multiset<int>s;
+    // s.insert(1);
+    // s.insert(2);
+    // s.insert(3);
+    // s.insert(1);
+    // s.insert(5);  
+    // //UNORDERED SET O(1)  rare O(n)
+    // unordered_set<int>s;
+    // s.insert(1);
+    // s.insert(2);
+    // s.insert(3);
+    // s.insert(1);
+    // s.insert(5);
 
     return 0;
 }
