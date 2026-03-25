@@ -5,10 +5,8 @@ using namespace std;
 
 // Two pointer O(nlogn)
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
-using namespace std;
+#include<unordered_map>
+
 
 // vector<int> twosum(vector<int>& nums, int target){
 //     sort(nums.begin(), nums.end());
@@ -31,21 +29,37 @@ using namespace std;
 // }
 
 //OPTIMIZED (HASHING)
-
+//  m.find() of unordered_map is O(1)
 vector<int> twosum(vector<int>& nums, int target){
+    unordered_map<int,int> m;
+    vector<int> ans;
 
+    for (int i = 0; i<nums.size() ; i++)
+    {
+        int first = nums[i];
+        int second  = target-first;
+        
+        if (m.find(second)!=m.end()) //ITERATORs
+        {
+            ans.push_back(i);
+            ans.push_back(m[second]);
+            break;
+        }
+        m[first]=i;
+        
+    }
+    return ans;
 
 }
 
+ 
 int main(){
     vector<int> arr = {2,5,7,11,15};
-
-    vector<int> y = twosum(arr, 9);
-
-    for (int i = 0; i < y.size(); i++)
+    vector<int> y = twosum(arr,9);
+    for (auto i:y)
     {
-        cout << y[i] << " ";
+        cout<<i<<endl;
     }
-
+    
     return 0;
 }
