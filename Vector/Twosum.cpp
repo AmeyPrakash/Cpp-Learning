@@ -2,10 +2,10 @@
 using namespace std;
 #include<vector>
 #include<algorithm>
+#include<unordered_map>
 
 // Two pointer O(nlogn)
 
-#include<unordered_map>
 
 
 // vector<int> twosum(vector<int>& nums, int target){
@@ -49,7 +49,7 @@ vector<int> twosum(vector<int>& nums, int target){
         
     }
     return ans;
-
+ 
 }
 
  
