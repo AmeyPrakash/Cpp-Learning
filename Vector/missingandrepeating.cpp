@@ -35,9 +35,13 @@ vector<int> findmissingandrepeated(vector<vector<int>>& grid){
        
 }
 
-int main(){
-    vector<vector<int>> grid=[[9,1,7],[8,9,2],[3,4,6]];
-
-
+int main() {
+    vector<vector<int>> grid={{9,1,7},{8,9,2},{3,4,6}};
+    vector<int> y = findmissingandrepeated(grid);
+    for(auto i : y)
+    {
+        cout<<i<<endl;
+    }
+    
     return 0;
 }
