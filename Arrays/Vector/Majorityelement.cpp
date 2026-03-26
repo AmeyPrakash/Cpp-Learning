@@ -29,11 +29,19 @@ using namespace std;
 We will first sort the array and then go through every element and if the element changes we will reset the freq;
 
 */
+
+//OPTIMIZED
 // int majorityelement(vector<int> &nums){ 
 //     int n= nums.size();
+
 //     int freq = 1;
+
 //     int ans = nums[0];
+
+
 //     sort(nums.begin(),nums.end());
+
+
 //     for (int i = 1; i < n; i++)
 //     {
 //         if (nums[i]=nums[i-1])
@@ -49,14 +57,19 @@ We will first sort the array and then go through every element and if the elemen
 //         }
         
 //     }return ans;
-    
+// }
+
+
+
+
+
 //MOORE's VOTING ALGORITHM
 //A simple loop will start with element at zeroth index elements' feq
 
 // same element freq++ diff element freq--
 //because majority element is occupying more than half space therefore its freq will never be zero or negative
 
-
+//MOORE's VOTING ALGORITHM
 int majorityelement(vector<int> &nums){ 
     int n= nums.size();
     int freq = 0;
@@ -92,6 +105,7 @@ int majorityelement(vector<int> &nums){
 
 
 int main(){
-
+    vector<int> y = {1,2,2,1,1};
+    cout<<majorityelement(y)<<endl;
     return 0;
 }
