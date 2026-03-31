@@ -5,18 +5,18 @@ using namespace std;
 
 // HASHING  
 
-// int duplicate(vector<int>& nums){
-//     unordered_set<int> s;
-//     for(int val: nums){
-//         if(s.find(val)!=s.end()){
-//             return val;
+int duplicate(vector<int>& nums){
+    unordered_set<int> s;
+    for(int val: nums){
+        if(s.find(val)!=s.end()){
+            return val;
 
-//         }
-//         s.insert(val);
-//     }
-//     return -1;
+        }
+        s.insert(val);
+    }
+    return -1;
 
-// }
+}
 
 
 // Slow fast Pointer approach (Linked list)
