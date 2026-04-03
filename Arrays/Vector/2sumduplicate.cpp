@@ -13,9 +13,9 @@ std::vector<std::vector<int>> twosumduplicate(std::vector<int>& nums, int target
 
             int l = nums[left], r = nums[right];
 
-            // skip duplicates safely
-            while (left < right && nums[left] == l) left++;
-            while (left < right && nums[right] == r) right--;
+            
+            while (left < right && nums[left] == l) left++;             //TC will still be O(n) elements are not visited again.
+            while (left < right && nums[right] == r) right--;   
         }
         else if (sum < target) {
             left++;
