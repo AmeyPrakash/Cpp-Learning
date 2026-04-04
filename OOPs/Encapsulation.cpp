@@ -1,8 +1,11 @@
 #include<iostream>
 #include<string> 
 
+
 //encapsulation is the process of hiding the implementation details of a class from the user
 //it is achieved by using access specifiers
+// Helps in data hiding and abstraction by restricting access to the internal state of an object and only allowing access through public methods. This promotes modularity, maintainability, and security in software design.
+
 
 class Teacher{ 
 private:
@@ -27,6 +30,15 @@ public:
         return salary;
     }
 
+};
+class account{
+private:
+    std::string password;
+    std::string balance;  
+public:
+    std::string accountId;
+    std::string username;
+      
 };
 
 int main(){
