@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+#include<string>
+
+
 class Solution {
 public:
      
