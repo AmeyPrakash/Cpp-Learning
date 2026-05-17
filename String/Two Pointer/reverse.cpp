@@ -1,20 +1,25 @@
 #include<iostream>
-#include<string>
-using namespace std;
-
+#include<vector>
 class Solution {
 public:
-    string reversePrefix(string s, int k) {
-        int n = s.size();
+    void reverseString(std::vector<char>& s) {
+        int n = s.size()-1;
         int left = 0;
-        int right = k-1;
-        if(k>n) k=n;
+        int right = n;
         while(left < right){
-            swap(s[left],s[right]);
-            right--;
+            std::swap(s[left],s[right]);
             left++;
+            right--;
         }
-        return s;
         
     }
 };
+int main() {
+    Solution s;
+    std::vector<char> arr = {'h','e','l','l','o'};
+    s.reverseString(arr);
+    for(auto x:arr){
+        std::cout<<x<<std::endl;
+    }
+    return 0;
+}
