@@ -84,17 +84,19 @@ public:
         std::cout << "Tasks sorted by priority!\n";
     }
 };
-int main(){
-    feature myFeature;
 
-    myFeature.addTask(task("Buy groceries", Priority::Medium));
-    myFeature.addTask(task("Finish project", Priority::High));
-    myFeature.addTask(task("Call mom", Priority::Low));
 
-    myFeature.displayTasks();
+// int main(){
+//     feature myFeature;
 
-    myFeature.sortTasks();
-    myFeature.displayTasks();
+//     myFeature.addTask(task("Buy groceries", Priority::Medium));
+//     myFeature.addTask(task("Finish project", Priority::High));
+//     myFeature.addTask(task("Call mom", Priority::Low));
 
-    return 0;
-}
+//     myFeature.displayTasks();
+
+//     myFeature.sortTasks();
+//     myFeature.displayTasks();
+
+//     return 0;
+// }

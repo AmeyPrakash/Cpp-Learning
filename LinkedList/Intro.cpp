@@ -6,7 +6,7 @@ public:
     int data;
     Node* next;
 
-    Node(int val){
+    Node(int val){ //Constructor
         data = val;
         next = NULL;
     }
