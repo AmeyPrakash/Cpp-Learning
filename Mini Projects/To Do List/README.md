@@ -1,8 +1,8 @@
-📝 C++ Command-Line Task Manager
-🚀 Project Overview
+# 📝 C++ Command-Line Task Manager
+## 🚀 Project Overview
 This is a lightweight, fully functional command-line Task Management application built entirely in C++. The primary goal of this project was to move beyond basic C++ syntax and put core software design principles into practice. By building this utility, I focused on writing clean, efficient, and well-structured code to solidify my understanding of object-oriented programming and memory management.
 
-✨ Features
+## ✨ Features
 Add Tasks: Create new tasks with a custom name.
 
 Priority Assignment: Categorize tasks by urgency (High, Medium, Low).
@@ -13,7 +13,8 @@ Dynamic Sorting: Automatically sort the task list so that the highest priority i
 
 Task Completion: Mark specific tasks as completed to track progress.
 
-🧠 Technical Concepts Applied
+
+## 🧠 Technical Concepts Applied
 This project heavily leverages modern C++ mechanics to ensure efficiency and type safety:
 
 Object-Oriented Programming: Utilized classes and encapsulation to bundle task data and feature methods together cleanly.
@@ -28,10 +29,10 @@ Memory Optimization: Used pass-by-const-reference for function parameters to pre
 
 Input Buffer Management: Handled stream extraction smoothly using std::cin.ignore() alongside getline() to prevent the program from skipping user inputs.
 
-🛠️ Getting Started
+## 🛠️ Getting Started
 To run this application on your local machine, you will need a C++ compiler (like GCC) installed.
 
-Clone the repository:
+### Clone the repository:
 
 Bash
 git clone https://github.com/yourusername/your-repo-name.git
@@ -50,7 +51,8 @@ On Windows:
 
 DOS
 taskmanager.exe
-🔮 Future Improvements
+
+## 🔮 Future Improvements
 While the core functionality is complete, I plan to expand this project with the following features:
 
 Data Persistence: Implement file I/O to save tasks to a .txt or .csv file so data remains after closing the app.
