@@ -21,6 +21,6 @@ string reversestring(string s){
 }
 int main(){
     string s = "abc";
-    cout<< reverse(s)<< endl;
+    cout<< reversestring(s)<< endl;
     return 0;
 }
